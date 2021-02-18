@@ -1,3 +1,7 @@
+![jordy](https://user-images.githubusercontent.com/42714724/108286311-31efd380-71cc-11eb-98c0-a68f31dd4ca3.jpg)
+
+
+
 # back-end-study
 
 
