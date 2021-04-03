@@ -1,6 +1,9 @@
 # 스프링 부트에서 테스트 코드를 작성하자
 
 
+![40344FEE-01ED-422E-8CB5-F1962B8B6EB8](https://user-images.githubusercontent.com/46446434/113465406-a6c25880-946e-11eb-869b-dbcd69e36774.png)
+
+
 
 ## 단위 테스트와 TDD
 - `TDD` : 테스트가 주도하는 개발, 테스트 코드를 먼저 작성
