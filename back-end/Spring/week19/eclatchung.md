@@ -89,7 +89,7 @@ assertThat(user2.getName(), is(user.getName()));
 - - - -
 - JUnit이 배번 테스트 클래스의 오브젝트를 새로 만들어서 애플리케이션 컨텍스트가 생길 수 있음
 - 애플리케이션 컨텍스트 관리를 해야함
-![](652EBE92-5700-4D9A-B72A-CE4B9308F9A2.png)
+![652EBE92-5700-4D9A-B72A-CE4B9308F9A2](https://user-images.githubusercontent.com/46446434/124301928-76887400-db9b-11eb-9ace-cd18a998b485.png)
 - `@RunWith()` : JUnit 프레임워크의 테스트 실행 방법을 확장시에 사용함
 	- SpringJUnit4ClassRunner라는 JUnit용 테스트 컨텍스트 프레임워크 확장 클래스를 지정해주면 JUnit이 테스트를 진행하는 중에 테스트가 사용할 애플리케이션 컨텍스트를 만들고 관리하는 작업을 진행해줌
 - `@ContextConfiguration` : 자동으로 만들어줄 애플리케이션 컨텍스트의 설정 파일 위치를 지정
