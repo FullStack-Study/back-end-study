@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/46446434/124301592-01b53a00-db9b-11eb-9c20-001fd1c889dd.png)
 # 들어가며 & 1장
 
 ## 스프링이란 무엇인가?
@@ -160,8 +161,9 @@ class Police(Gun):
 - 객체의 생성 방법을 결정하고 그렇게 만들어진 오브젝트를 돌려주는것
 - 오브젝트를 생성하는 쪽과 생성된 오브젝트를 사용하는 쪽의 역할과 책임ㅇ르 깔끔하게 분리하는 목적
 - 컴포넌트의 구조와 관계를 정의한 설계도 같은 역할
-![](image.png)
-![](image.png)
+![image](https://user-images.githubusercontent.com/46446434/124301622-0bd73880-db9b-11eb-915b-64a246d182fd.png)
+![image](https://user-images.githubusercontent.com/46446434/124301716-26a9ad00-db9b-11eb-8a38-6c39928cf2f8.png)
+
 
 #### 제어의 역전
 - 프로그램의 제어 흐름 구조가 뒤바뀌는 것
@@ -187,7 +189,7 @@ class Police(Gun):
 - `@Component` : 해당 어노테이션이 붙어있는 클래스, 인터페이스는 자동으로 IoC컨테이너에 등록 
 - `@Configuration`: 빈 팩토리를 위한 오브젝트 설정을 담당하는 클래스로 인식할 수 있음
 - `@Bean` : 오브젝트 만들어주는 메소드
-![](image.png)
+![image](https://user-images.githubusercontent.com/46446434/124301732-2b6e6100-db9b-11eb-9d51-b219c1dc17a8.png)
 - `@Configuration` 이 붙은 자바 코드를 설정정보로 사용하려면 `AnnotationConfigApplicationContext`를 이용하면됨
 	- `getBean()`이라는 메소드를 통해 오브젝트를 가져올 수 있음
 		- 기본적으로 Object타입 리턴
@@ -203,14 +205,15 @@ class Police(Gun):
 - DaoFactory에서 userDao()를 여러번 호출시 동일한 오브젝트가 들어오는가?
 	- 동일한 오브젝트가 아님
 	- 애플리케이션 컨텍스트 X
-![](image.png)
+![Uploading image.png…]()
 - 애플리케이션 컨텍스트를 사용한 Factory에서 getBean이용시 userDao가 동일한가?
 	- 동일한 오브젝트임
 	- 싱글톤이기 때문에 동일한 오브젝트가 나옴
 	- 애플리케이션 컨텍스트 == IoC 컨테이너 == `싱글톤 레지스트리`
 		- 싱글톤레지스트리 : 싱글톤을 저장하고 관리하는 곳.
 		- 스프링은 기본적으로 별다른 설정없으면 내부에서 생성하는 빈 오브젝트를 모두 싱글톤으로 만듬
-![](image.png)
+![Uploading image.png…]()
+
 **싱글톤으로 빈을 만든 이유 ⇒ 클라이언트에서 요청올때마다 로직의 오브젝트를 새로 만들시에 서버 부하가 생김**
 
 ### 싱글톤 패턴
@@ -257,7 +260,7 @@ class Police(Gun):
 	- 제 3의존재 : 관계설정 책임을 가진 코드를 분리해서 만들어진 오브젝트
 #### 의존관계
 ( UML )
-![](4CE07981-AA71-413A-8345-93C10BD47BF7.png)
+![4CE07981-AA71-413A-8345-93C10BD47BF7](https://user-images.githubusercontent.com/46446434/124301760-35905f80-db9b-11eb-88a9-6836755ffed4.png)
 A가 B에 의존
 - 의존 : 의존대상 B가 변하면 A에게도 영향이감
 - A가 B에 정의된 메소드 호출하여 사용
@@ -265,7 +268,7 @@ A가 B에 의존
 - A는 B에 의존해도 B는 A에 의존안할 수 있음
 - **인터페이스를 통해 의존 관계를 제한해주면 그만큼 변경에 자유로워짐**⇒ 결합도가 낮다
 
-![](ECD5472B-D922-4B92-BC8D-5A09314C0884.png)
+![ECD5472B-D922-4B92-BC8D-5A09314C0884](https://user-images.githubusercontent.com/46446434/124301774-3aedaa00-db9b-11eb-92ab-1ef58448c13a.png)
 - ** 런타임 의존관계 (aka 오브젝트의 의존관계)**
 	- 런타임시에 오브젝트 사이에서 만들어지는 의존관계
 		- 의존오브젝트(`dependent object`) : 프로그램이 시작되고 오브젝트가 만들어지고 나서 런타임시에 의존관계를 맺는 대상, 실제 사용 대상 
