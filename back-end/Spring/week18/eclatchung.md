@@ -1,4 +1,3 @@
-![image](https://user-images.githubusercontent.com/46446434/124301592-01b53a00-db9b-11eb-9c20-001fd1c889dd.png)
 # 들어가며 & 1장
 
 ## 스프링이란 무엇인가?
@@ -161,6 +160,7 @@ class Police(Gun):
 - 객체의 생성 방법을 결정하고 그렇게 만들어진 오브젝트를 돌려주는것
 - 오브젝트를 생성하는 쪽과 생성된 오브젝트를 사용하는 쪽의 역할과 책임ㅇ르 깔끔하게 분리하는 목적
 - 컴포넌트의 구조와 관계를 정의한 설계도 같은 역할
+- 
 ![image](https://user-images.githubusercontent.com/46446434/124301622-0bd73880-db9b-11eb-915b-64a246d182fd.png)
 ![image](https://user-images.githubusercontent.com/46446434/124301716-26a9ad00-db9b-11eb-8a38-6c39928cf2f8.png)
 
